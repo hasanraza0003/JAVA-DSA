@@ -6,6 +6,13 @@
         "configurations": [
                 {
                         "type": "java",
+                        "name": "flowOfProgram",
+                        "request": "launch",
+                        "mainClass": "flowOfProgram",
+                        "projectName": "JAVA_b4ae0bdb"
+                },
+                {
+                        "type": "java",
                         "name": "day2",
                         "request": "launch",
                         "mainClass": "day2",

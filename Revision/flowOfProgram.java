@@ -50,31 +50,31 @@ public class flowOfProgram {
                 // System.out.println("The Total Sum is -> " + sum);
         
                 
-        
+                sc.close();
         }
 
-        public static String leapYear(int year) {
+        // public static String leapYear(int year) {
 
-                if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-                        return ("Leap Year");
-                } else {
-                        return ("Year Is Not A Leap Year");
-                }
-        }
+        //         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        //                 return ("Leap Year");
+        //         } else {
+        //                 return ("Year Is Not A Leap Year");
+        //         }
+        // }
 
-        public static void hcfAndlcm(int x,int y){
-                int temp,temp1,temp2;
-                temp1=x;
-                temp2=y;
-                while(temp2!=0){
-                        temp=temp2;
-                        temp2=temp1%temp2;
-                        temp1=temp;
-                }
-                int hcf=temp1;
-                int lcm=(x*y)/hcf;
+        // public static void hcfAndlcm(int x,int y){
+        //         int temp,temp1,temp2;
+        //         temp1=x;
+        //         temp2=y;
+        //         while(temp2!=0){
+        //                 temp=temp2;
+        //                 temp2=temp1%temp2;
+        //                 temp1=temp;
+        //         }
+        //         int hcf=temp1;
+        //         int lcm=(x*y)/hcf;
+        //         System.out.println("hcf is -> "+hcf);
+        //         System.out.println("lcm is -> "+lcm);
+        // }
 
-                System.out.println("hcf is -> "+hcf);
-                System.out.println("lcm is -> "+lcm);
-        }
 }

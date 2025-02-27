@@ -45,9 +45,10 @@ public class first {
                 // String str=sc.next();
                 // pallindrome(str.toLowerCase());
 
-                System.out.println("Enter The Number You want to check is Armstrong or not");
-                int num=sc.nextInt();
-                armstrong(num);
+                // System.out.println("Enter The Number You want to check is Armstrong or not");
+                // int num=sc.nextInt();
+                // armstrong(num);
+                sc.close();
         }
 
         // public static void evenOrOdd(int num){
@@ -128,29 +129,24 @@ public class first {
         //         System.out.println("The String is Pallindrome");
         // }
 
-        public static void armstrong(int num){
+        // public static void armstrong(int num){
+        //         if (num < 0) {
+        //                 System.out.println("Negative numbers cannot be Armstrong numbers.");
+        //                 return;
+        //             }
+        //         int count=0,temp=num,temp2=num;
+        //         while(temp!=0){
+        //                 temp /= 10;
+        //                 count++;
+        //         }
+        //         int sum=0;
+        //         while(temp2!=0){
+        //                 int rem=temp2%10;
+        //                 sum+=Math.pow(rem, count);
+        //                 temp2 /= 10;
+        //         }
+        //         System.out.println("The Number is "+ (sum==num ? "Armstrong Number" : "Not an Armstrong Number"));
+        // }
 
-                if (num < 0) {
-                        System.out.println("Negative numbers cannot be Armstrong numbers.");
-                        return;
-                    }
-            
-                int count=0,temp=num,temp2=num;
-                
-                while(temp!=0){
-                        temp /= 10;
-                        count++;
-                }
-               
-                int sum=0;
-
-                while(temp2!=0){
-                        int rem=temp2%10;
-                        sum+=Math.pow(rem, count);
-                        temp2 /= 10;
-                }
-
-                System.out.println("The Number is "+ (sum==num ? "Armstrong Number" : "Not an Armstrong Number"));
-
-        }
+        
 }
