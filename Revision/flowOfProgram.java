@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class practice {
+public class flowOfProgram {
         public static void main(String[] args) {
                 System.out.println("Hello");
 
