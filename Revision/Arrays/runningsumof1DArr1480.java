@@ -1,4 +1,4 @@
-package Arrays;
+
 import java.util.Scanner;
 
 public class runningsumof1DArr1480 {
