@@ -1,3 +1,4 @@
+package Basics;
 import java.util.*;
 
 public class conditionLoops{
@@ -21,11 +22,13 @@ public class conditionLoops{
                 // int num=sc.nextInt();
                 // fact(num);
 
-                System.out.println("Enter The String You Want to Reverse -> ");
-                String str=sc.next();
-                reverseStr1(str);
-                reverseStr2(str);
-                reverseStr3(str);
+                // System.out.println("Enter The String You Want to Reverse -> ");
+                // String str=sc.next();
+                // reverseStr1(str);
+                // reverseStr2(str);
+                // reverseStr3(str);
+
+                
 
 
                 sc.close();
@@ -86,31 +89,31 @@ public class conditionLoops{
         //         System.out.println("The Factorial Of Number is  -> "+ fact);
         // }
 
-        public static void reverseStr1(String str){
-                String rev=new StringBuilder(str).reverse().toString();
-                System.out.println("The Reverse String is -> "+ rev);
-        }        
+        // public static void reverseStr1(String str){
+        //         String rev=new StringBuilder(str).reverse().toString();
+        //         System.out.println("The Reverse String is -> "+ rev);
+        // }        
 
-        public static void reverseStr2(String str){
-                char[] charArr=str.toCharArray();
-                int left=0,right=charArr.length-1;
-                while(left<right){
-                        char temp=charArr[left];
-                        charArr[left]=charArr[right];
-                        charArr[right]=temp;
-
-                        left++;
-                        right--;
-                }
-                System.out.println("The Reverse String is -> " + new String(charArr));
-        }
+        // public static void reverseStr2(String str){
+        //         char[] charArr=str.toCharArray();
+        //         int left=0,right=charArr.length-1;
+        //         while(left<right){
+        //                 char temp=charArr[left];
+        //                 charArr[left]=charArr[right];
+        //                 charArr[right]=temp;
+        //                 left++;
+        //                 right--;
+        //         }
+        //         System.out.println("The Reverse String is -> " + new String(charArr));
+        // }
         
-        public static void reverseStr3(String str){    
-                String rev="";
-                for(int i=str.length()-1;i>=0;i--){
-                        rev += str.charAt(i);
-                }
-                System.out.println("The Reverse String is -> " + rev);
-        }
+        // public static void reverseStr3(String str){    
+        //         String rev="";
+        //         for(int i=str.length()-1;i>=0;i--){
+        //                 rev += str.charAt(i);
+        //         }
+        //         System.out.println("The Reverse String is -> " + rev);
+        // }
+
 
 }
