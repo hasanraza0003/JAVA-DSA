@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class romanToNumber {
 
@@ -36,8 +37,9 @@ public class romanToNumber {
     }
 
     public static void main(String[] args) {
-        String romanNumeral = "MCMXCIV"; // Example Roman numeral
-        int result = romanToInt(romanNumeral);
-        System.out.println("The integer value of " + romanNumeral + " is: " + result);
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        System.out.println(romanToInt(str));
+        sc.close();
     }
 }

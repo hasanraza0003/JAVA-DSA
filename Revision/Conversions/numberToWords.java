@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class numberToWords {
         private static final String[] units = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
         private static final String[] teens = {"Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen","Seventeen", "Eighteen", "Nineteen"};
@@ -14,8 +16,11 @@ public class numberToWords {
     
         public static void main(String[] args) {
 
-            System.out.println(convert(123)); // Output: One Hundred Twenty Three
-            
+            Scanner sc=new Scanner(System.in);
+            int num=sc.nextInt();
+            System.out.println(convert(num)); 
+            sc.close();
+
         }
     }
     
