@@ -26,6 +26,7 @@ public class rotateMatrix {
                         }
                         System.out.println();
                 }
+
                 for (int i = 0; i < row; i++) {
                         for (int j = 0; j < col; j++) {
                                 System.out.print(mat2[i][j] + " ");
@@ -33,18 +34,12 @@ public class rotateMatrix {
                         System.out.println();
                 }
 
+                sc.close();
         }
 
         public static void rotateClockWise(int[][] mat, int row, int col) {
-
                 // transpose
-                for (int i = 0; i < row; i++) {
-                        for (int j = i; j < col; j++) {
-                                int temp = mat[i][j];
-                                mat[i][j] = mat[j][i];
-                                mat[j][i] = temp;
-                        }
-                }
+                transpose(mat, row, col);
 
                 // reverse
                 for (int i = 0; i < row; i++) {
@@ -56,15 +51,9 @@ public class rotateMatrix {
                 }
         }
         public static void rotateCounterClockWise(int[][] mat, int row, int col) {
-
                 // transpose
-                for (int i = 0; i < row; i++) {
-                        for (int j = i; j < col; j++) {
-                                int temp = mat[i][j];
-                                mat[i][j] = mat[j][i];
-                                mat[j][i] = temp;
-                        }
-                }
+                transpose(mat, row, col);
+
                 // reverse
                 for (int i = 0; i < row/2; i++) {
                         for (int j = 0; j < col ; j++) {
@@ -73,6 +62,17 @@ public class rotateMatrix {
                                 mat[col-1-i][j] = temp;
                         }
                 }
+        }
+
+        public static void transpose(int[][] mat,int row,int col){
+                // transpose
+                for (int i = 0; i < row; i++) {
+                        for (int j = i; j < col; j++) {
+                                int temp = mat[i][j];
+                                mat[i][j] = mat[j][i];
+                                mat[j][i] = temp;
+                        }
+                }       
         }
 
 }
