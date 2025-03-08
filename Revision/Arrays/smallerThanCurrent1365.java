@@ -17,9 +17,7 @@ class smallerThanCurrent1365{
                 for (int i = 0; i < n; i++) {
                         System.out.print(ans[i]+" ");
                 }
-
                 sc.close();
-
         }
 
         // Brute Force 
