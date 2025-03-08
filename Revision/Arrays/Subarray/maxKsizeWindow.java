@@ -27,6 +27,8 @@ public class maxKsizeWindow {
                 }
                 sc.close();
 
+                
+
         }
 
         public static int[] maxInWindowK(int[] arr,int n,int k){
